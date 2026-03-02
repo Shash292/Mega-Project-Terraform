@@ -23,7 +23,7 @@ resource "aws_subnet" "devopsproject_subnet" {
 }
 
 resource "aws_internet_gateway" "devopsproject_igw" {
-  vpc_id = aws_vpc.devopsshack_vpc.id
+  vpc_id = aws_vpc.devopsproject_vpc.id
 
   tags = {
     Name = "devopsproject-igw"
