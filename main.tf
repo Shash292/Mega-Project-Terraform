@@ -31,7 +31,7 @@ resource "aws_internet_gateway" "devopsproject_igw" {
 }
 
 resource "aws_route_table" "devopsproject_route_table" {
-  vpc_id = aws_vpc.devopsshack_vpc.id
+  vpc_id = aws_vpc.devopsproject_vpc.id
 
   route {
     cidr_block = "0.0.0.0/0"
